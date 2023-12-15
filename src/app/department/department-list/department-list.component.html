@@ -1,0 +1,21 @@
+<div class="container" my-5>
+  <h1 class="mb-3">Departments</h1>
+
+  <table class="table" *ngIf="departments && departments.length > 0" >
+    <thead>
+      <th>Id</th>
+      <th>DepartmentName</th>
+      <th></th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let department of departments">
+        <td>{{department.id}}</td>
+        <td>{{department.departmentName}}</td>
+        <td><a [routerLink]="['/departments/add']">Add</a></td>
+        <td><a [routerLink]="['/departments','edit',department.id]">View</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="!departments || departments.length <= 0">No Departments</p>
+</div>
