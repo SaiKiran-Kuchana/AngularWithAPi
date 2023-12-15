@@ -13,9 +13,6 @@ import { AddDepartmentComponent } from './department/add-department/add-departme
 import { EditDepartmentComponent } from './department/edit-department/edit-department.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddEditEmpComponent } from './Ang-Material-Curd/add-edit-emp/add-edit-emp.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -33,10 +30,7 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
